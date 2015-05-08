@@ -16,10 +16,5 @@ Gem::Specification.new do |s|
 
   s.files       = `git ls-files`.split $/
 
-  s.add_dependency 'emblem-sprockets',  '~> 0.1.0'
-
-  # FIXME: handlebars-source version is hardcoded until emblem can work with
-  # handlebars >= 1.1.1.
-  # see: https://github.com/machty/emblem.js/issues/107
-  s.add_dependency 'handlebars-source', '1.0.12'
+  s.add_dependency 'ember-emblem-template', '~> 0.2'
 end

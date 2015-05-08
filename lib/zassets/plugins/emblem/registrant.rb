@@ -1,3 +1,5 @@
+require 'ember/emblem/template'
+
 module ZAssets
   module Plugins
     module Emblem
@@ -7,12 +9,7 @@ module ZAssets
         end
 
         def register
-          require 'emblem/sprockets/template'
-          require 'handlebars/source'
-
-          @config[:engines][:emblem] = ::Emblem::Sprockets::Template
-
-          @config[:paths] << File.dirname(::Handlebars::Source.bundled_path)
+          @config[:engines][:emblem] = ::Ember::Emblem::Template
         end
       end
     end
